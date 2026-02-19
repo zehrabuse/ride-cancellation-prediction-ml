@@ -1,1 +1,62 @@
+ML PIPELINE ACTIVITY DIAGRAM DESCRIPTION
+
+The activity diagram illustrates the complete end-to-end machine learning
+pipeline, starting from business problem definition to model deployment and
+result visualization. The workflow is aligned with the weekly project plan
+and does not include decision nodes, as the process follows a linear pipeline
+structure.
+
+This text file describes the complete end-to-end machine learning pipeline
+implemented in this project.
+
+1. Problem Definition & Business Understanding
+In the first stage, the business problem is clearly defined by identifying the
+ride cancellation issue and its impact on business operations. Stakeholders are
+identified, success metrics are defined, and the overall structure of the
+dataset is examined to understand the available features.
+
+2. Load Historical Ride Dataset
+The historical ride dataset is loaded into the system. This dataset contains
+information related to ride requests, user behavior, and ride outcomes, which
+will be used for further analysis and model training.
+
+3. Data Cleaning & Preprocessing
+In this step, the dataset is cleaned and prepared for analysis. Missing values
+are handled, categorical variables are encoded, and numerical features are
+scaled to ensure compatibility with machine learning algorithms.
+
+4. Exploratory Data Analysis (EDA)
+Exploratory Data Analysis is performed to understand data distributions,
+identify patterns, and analyze ride cancellation behavior. Visualizations are
+used to explore correlations and trends within the data.
+
+5. Feature Engineering
+New features are created to improve model performance. Feature selection is
+applied to identify the most relevant variables. The dataset is then split into
+training and testing sets.
+
+6. Train Machine Learning Model
+Machine learning models are trained using the prepared dataset. A baseline
+model is implemented first, followed by more advanced models. Hyperparameter
+tuning is performed to optimize model performance.
+
+7. Evaluate Model Performance
+The trained models are evaluated using standard performance metrics including
+accuracy, precision, recall, F1-score, and confusion matrix analysis. The best
+performing model is selected based on these evaluation results.
+
+8. Predict Ride Cancellation Probability
+The selected model is used to predict the probability of ride cancellation for
+new or unseen data.
+
+9. Generate Insights & Visual Outputs
+Model results are interpreted to generate business insights. Feature importance
+analysis and visual outputs are created to support decision-making and explain
+model behavior.
+
+10. Display Results in Demo Interface
+The final model is prepared for deployment and integrated into a demo interface
+where predictions and visual outputs can be displayed to the user.
+
+End of pipeline.
 
