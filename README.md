@@ -79,5 +79,4 @@ budget are documented in the Excel file located in the `docs/` folder.
 ## Author
 Zehra Buse Tüfekçi
 
-1. Install the required libraries:
 
