@@ -11,6 +11,13 @@ Ride cancellations negatively affect customer satisfaction and operational
 efficiency. By predicting cancellation probability in advance, companies can
 take proactive actions to reduce cancellations and improve service quality.
 
+## Business Objectives
+
+Detailed documentation of the business objectives, decision support perspective, and expected business impact of this project is available below:
+
+- 📄 [Business Objectives Documentation](docs/business_objectives.md)
+
+
 ## Machine Learning Pipeline
 The machine learning workflow is designed as a linear pipeline aligned with the
 weekly project plan. The pipeline includes the following stages:
