@@ -16,6 +16,7 @@ take proactive actions to reduce cancellations and improve service quality.
 Detailed documentation of the business objectives, decision support perspective, and expected business impact of this project is available below:
 
 - 📄 [Business Objectives Documentation](docs/business_objectives.md)
+- 📊 [Business Value & Success Metrics](docs/business_value_and_metrics.md)
 
 
 ## Machine Learning Pipeline
