@@ -1,7 +1,7 @@
 # Feature Engineering Documentation
 
 ## Purpose
-This notebook converts the cleaned dataset into a model-ready dataset with feature extraction and encoding.
+This notebook(`RDP_Feature_Engineering.ipynb`) converts the cleaned dataset into a model-ready dataset with feature extraction and encoding.
 
 ## Steps Taken
 
