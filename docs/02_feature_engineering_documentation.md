@@ -3,6 +3,9 @@
 ## Purpose
 This notebook(`RDP_Feature_Engineering.ipynb`) converts the cleaned dataset into a model-ready dataset with feature extraction and encoding.
 
+## Notebook
+You can view and run the notebook here: [RDP_Feature_Engineering.ipynb](../notebooks/RDP_Feature_Engineering.ipynb)
+
 ## Steps Taken
 
 ### Temporal Features
