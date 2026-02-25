@@ -3,6 +3,9 @@
 ## Purpose
 This notebook(`RDP_Data_Cleaning.ipynb`) focuses on cleaning the raw ride dataset to handle missing values and prepare it for feature engineering.
 
+## Notebook
+You can view and run the notebook here: [RDP_Data_Cleaning.ipynb](../notebooks/RDP_Data_Cleaning.ipynb)
+
 ## Steps Taken
 
 ### Target Column
