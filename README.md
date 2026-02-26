@@ -24,13 +24,13 @@ Detailed documentation of the business objectives, decision support perspective,
 This document focuses on handling missing values in the dataset.  
 It explains how missing values were identified and how they were handled to improve data quality and prepare the data for modeling.
 
-[01_cleaning_documentation.md](01_cleaning_documentation.md)
+[01_cleaning_documentation.md](docs/01_cleaning_documentation.md)
 
 ### 📄 Feature Engineering Documentation
 This document covers the feature engineering process applied to the dataset.  
 It includes data type corrections, encoding of categorical variables, and basic feature transformations performed to make the dataset suitable for machine learning algorithms.
 
-[02_feature_engineering_documentation.md](02_feature_engineering_documentation.md)
+[02_feature_engineering_documentation.md](docs/02_feature_engineering_documentation.md)
 
 ## Machine Learning Pipeline
 The machine learning workflow is designed as a linear pipeline aligned with the
