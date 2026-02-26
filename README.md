@@ -64,7 +64,7 @@ of the activity diagram is available in the file
 ## Project Structure
 The repository is organized as follows:
 
-- `data/` – Raw and processed datasets  
+- `data/` – Raw dataset
 - `notebooks/` – Jupyter notebooks for each stage of the ML pipeline  
 - `models/` – Trained machine learning models  
 - `deployment/` – Demo application for model deployment  
