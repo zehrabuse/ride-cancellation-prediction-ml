@@ -1,10 +1,10 @@
 # Ride Cancellation EDA Documentation
 
 ## Purpose
-This notebook (**notebooks/RDP_EDA.ipynb**) provides a comprehensive exploratory analysis of the ride cancellation dataset. The goal is to identify patterns, trends, and key features influencing cancellations, which will guide subsequent feature engineering and predictive modeling.
+This notebook ('RDP_EDA.ipynb') provides a comprehensive exploratory analysis of the ride cancellation dataset. The goal is to identify patterns, trends, and key features influencing cancellations, which will guide subsequent feature engineering and predictive modeling.
 
 ## Notebook
-You can view and run the notebook here: **notebooks/RDP_EDA.ipynb**
+You can view and run the notebook here:  [RDP_EDA.ipynb](../notebooks/RDP_EDA.ipynb)
 
 ## Steps Taken
 
