@@ -30,18 +30,19 @@ It explains how missing values were identified and how they were handled to impr
 This document covers the feature engineering process applied to the dataset.  
 It includes data type corrections, encoding of categorical variables, and basic feature transformations performed to make the dataset suitable for machine learning algorithms.
 
+[02_feature_engineering_documentation.md](docs/02_feature_engineering_documentation.md)
+
 ### 📄 Exploratory Data Analysis
 
 This repository includes a comprehensive exploratory analysis of the ride cancellation dataset. The EDA notebook identifies patterns, trends, and key features influencing cancellations, which helps guide feature engineering and predictive modeling.
 
-You can view and run the notebook here: [Open RDP_EDA Notebook](notebooks/RDP_EDA.ipynb)
+You can view and run the notebook here: [03_exploratory_data_analysis.md](docs/03_exploratory_data_analysis.md)
 
 ### Key Analyses in the Notebook
 - **Temporal Analysis:** Hourly, 15-minute intervals, day of month, day of week, and weekday vs weekend.
 - **Categorical Feature Analysis:** Vehicle Type and Payment Method one-hot encoded features analyzed for cancellation trends.
 - **Observations:** Peak cancellation times, high-risk vehicle types, and payment methods highlighted.
 
-[02_feature_engineering_documentation.md](docs/02_feature_engineering_documentation.md)
 
 ## Machine Learning Pipeline
 The machine learning workflow is designed as a linear pipeline aligned with the
