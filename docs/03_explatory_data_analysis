@@ -11,11 +11,11 @@ You can view and run the notebook here: **notebooks/RDP_EDA.ipynb**
 ### 1. Temporal Analysis
 - Converted `Year`, `Month`, `Day`, `Hour`, `Minute` columns into **datetime format** (`booking_time`).
 - Created additional time-based features:
-  - `hour_minute` → hour and minute combination
-  - `time_15min` → 15-minute intervals
-  - `Day` → day of the month
-  - `day_of_week` → day of the week
-  - `week_part` → weekday vs weekend
+  - `hour_minute` – hour and minute combination
+  - `time_15min` – 15-minute intervals
+  - `Day` – day of the month
+  - `day_of_week` – day of the week
+  - `week_part` – weekday vs weekend
 - Analyzed cancellations over time using **line plots** and **bar plots**.
 
 ### 2. Day-wise Cancellation Analysis
@@ -26,8 +26,8 @@ You can view and run the notebook here: **notebooks/RDP_EDA.ipynb**
 
 ### 3. Categorical Feature Analysis
 - Analyzed **one-hot encoded features**:
-  - Vehicle Type → calculated cancellation rate per vehicle type.
-  - Payment Method → calculated cancellation rate per payment method.
+  - Vehicle Type – calculated cancellation rate per vehicle type.
+  - Payment Method – calculated cancellation rate per payment method.
 - Transformed one-hot encoded columns to **long format** for meaningful aggregation.
 - Visualized high-risk categories using bar plots.
 
