@@ -2,10 +2,10 @@
 
 ## Purpose
 
-This notebook [RDP_Business_Insights.ipynb](notebooks/RDP_Business_Insights.ipynb) provides a comprehensive analysis of ride cancellations from a processed ride-hailing dataset. The goal is to extract **business-relevant insights**, identify key factors influencing cancellations, and provide actionable recommendations for improving **platform reliability, customer satisfaction, and driver efficiency**.
+This notebook[RDP_Business_Insights.ipynb](../notebooks/RDP_Business_Insights.ipynb) provides a comprehensive analysis of ride cancellations from a processed ride-hailing dataset. The goal is to extract **business-relevant insights**, identify key factors influencing cancellations, and provide actionable recommendations for improving **platform reliability, customer satisfaction, and driver efficiency**.
 
 ## Notebook
-You can view and run the notebook here: [RDP_Business_Insights.ipynb](notebooks/RDP_Business_Insights.ipynb)
+You can view and run the notebook here: [RDP_Business_Insights.ipynb](../notebooks/RDP_Business_Insights.ipynb)
 
 ## Steps Taken
 
