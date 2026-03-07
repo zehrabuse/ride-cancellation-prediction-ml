@@ -49,4 +49,4 @@ You can view and run the notebook here: [RDP_Business_Insights.ipynb](../noteboo
 
 Summarized tables and plots highlighting cancellation trends, temporal patterns, vehicle types, and payment method issues, along with actionable business recommendations.
 
-*This documentation accompanies the `RDP_Business_Insights.ipynb` notebook and is intended for portfo
+*This documentation accompanies the `RDP_Business_Insights.ipynb` notebook and is intended for portfolio
