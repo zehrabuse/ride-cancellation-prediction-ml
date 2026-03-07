@@ -38,7 +38,7 @@ This repository includes a comprehensive exploratory analysis of the ride cancel
 
 You can view and run the notebook here: [03_exploratory_data_analysis.md](docs/03_exploratory_data_analysis.md)
 
-📄 Business Insights Documentation
+### 📄 Business Insights Documentation
 This notebook provides actionable business insights derived from the ride cancellation data. It highlights key patterns, temporal trends, vehicle types, and payment methods affecting cancellations, along with recommendations for improving platform reliability, customer satisfaction, and driver efficiency.
 
 You can view and run the notebook here: [04_business_insights.md](docs/04_business_insights.md)
