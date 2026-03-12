@@ -2,110 +2,166 @@
 
 ## 1. Introduction
 
-Validation and testing are essential parts of a data science and machine learning project. They ensure that the developed model works correctly, generalizes well to unseen data, and provides reliable results. 
+Validation and testing are essential steps in a data science and machine learning project. They ensure that the developed model works correctly, produces reliable predictions, and generalizes well to unseen data.
 
-This document describes how the system and machine learning model in the Ride Data Project (RDP) will be tested, which validation methods will be used, and how the model performance will be evaluated.
+This document describes how the system and machine learning model in the Ride Cancellation Project will be tested, which validation methods will be used, and how the performance of the model will be evaluated.
+
+The goal of this process is to ensure that the model is robust, accurate, and suitable for real-world decision-making.
 
 ---
 
 # 2. System and Model Testing
 
-The system will be tested at multiple levels to ensure reliability and correctness.
+The system will be tested at different stages of the project to ensure that all components function correctly.
 
-### Data Testing
-Before training the model, the dataset will be checked to ensure that it is suitable for analysis and modeling. The following checks will be performed:
+## 2.1 Data Testing
 
-- Detecting missing values
+Before training the machine learning model, the dataset must be verified to ensure that it is clean and reliable. Poor data quality can negatively affect model performance.
+
+The following checks will be performed:
+
+- Detecting and handling missing values
 - Removing duplicate records
-- Verifying data types
-- Checking for outliers or inconsistent values
+- Verifying correct data types
+- Identifying and handling outliers
+- Ensuring consistent formatting across the dataset
 
-These steps help ensure that the data used for training the model is clean and reliable.
+These steps help ensure that the data used for training and evaluation is accurate and suitable for analysis.
 
-### Model Testing
+---
 
-After the model is trained, it will be tested using a separate dataset that was not used during training. This ensures that the model is evaluated on **unseen data**, which provides a realistic measure of its performance.
+## 2.2 Model Testing
+
+After data preparation and feature engineering, the machine learning model will be trained and tested.
 
 The testing process includes:
 
-- Splitting the dataset into **training and testing sets**
-- Training the model using the training data
-- Evaluating the model using the test data
+1. Splitting the dataset into training and testing sets.
+2. Training the model using the training dataset.
+3. Evaluating the model using a separate testing dataset.
+
+Testing the model on unseen data helps measure how well the model generalizes to new data and prevents overly optimistic performance estimates.
 
 ---
 
 # 3. Validation Methods
 
-To ensure that the model generalizes well and avoids overfitting, validation techniques will be applied.
+To ensure reliable performance evaluation, validation techniques will be applied during model development.
 
-### Train-Test Split
+## 3.1 Train-Test Split
 
 The dataset will be divided into two parts:
 
-- **Training Set (80%)** – used to train the machine learning model
-- **Test Set (20%)** – used to evaluate model performance
+- **Training Set (80%)** – used to train the machine learning model.
+- **Test Set (20%)** – used to evaluate the final model performance.
 
-This method allows the model to be tested on data that it has never seen before.
+This method ensures that the model is evaluated on data it has not seen during training.
 
-### Cross-Validation
+---
 
-Cross-validation will also be used to obtain a more reliable estimate of model performance. 
+## 3.2 Cross-Validation
+
+To obtain a more reliable estimate of model performance, **k-fold cross-validation** will be used.
 
 In this method:
 
-- The dataset is divided into multiple folds (for example, 5 folds).
-- The model is trained and validated multiple times using different portions of the dataset.
-- The final performance score is calculated as the average of all runs.
+1. The dataset is divided into *k* equal parts (folds).
+2. The model is trained and validated multiple times using different folds.
+3. Each fold is used once as a validation set while the remaining folds are used for training.
+4. The final performance score is calculated as the average of all iterations.
 
-Cross-validation helps reduce bias and improves the robustness of the evaluation.
+Cross-validation helps reduce variance in the evaluation and improves the robustness of the model.
 
 ---
 
 # 4. Performance Evaluation Metrics
 
-To evaluate the performance of the machine learning model, several evaluation metrics will be used.
+Several evaluation metrics will be used to assess the performance of the machine learning model.
 
-### Accuracy
+## 4.1 Recall (Primary Metric)
 
-Accuracy measures the proportion of correctly predicted instances compared to the total number of predictions.
+Recall is considered the **most important evaluation metric for this project**.
+
+Recall measures the ability of the model to correctly identify positive cases.
+
+Recall is calculated as:
+
+Recall = True Positives / (True Positives + False Negatives)
+
+A high recall value indicates that the model successfully detects most positive cases and minimizes **false negatives**.
+
+In many decision-making scenarios, missing a positive case can be more costly than incorrectly predicting a positive case. Therefore, maximizing recall is a key objective of this project.
+
+---
+
+## 4.2 Accuracy
+
+Accuracy measures the proportion of correctly predicted observations among all predictions.
 
 Accuracy = Correct Predictions / Total Predictions
 
-### ROC Curve
+Although accuracy provides a general idea of model performance, it may not always be sufficient on its own, especially when the dataset is imbalanced.
 
-The Receiver Operating Characteristic (ROC) curve is used to visualize the model's ability to distinguish between classes. It shows the relationship between the True Positive Rate and the False Positive Rate.
+---
 
-### AUC Score
+## 4.3 ROC Curve
 
-The Area Under the ROC Curve (AUC) provides a single numerical value that summarizes the model’s performance. A higher AUC value indicates better classification performance.
+The **Receiver Operating Characteristic (ROC) Curve** is used to evaluate the classification performance of the model.
 
-### Confusion Matrix
+The ROC curve illustrates the relationship between:
 
-A confusion matrix will also be used to evaluate the model's predictions by showing:
+- True Positive Rate
+- False Positive Rate
+
+It helps visualize how well the model distinguishes between different classes.
+
+---
+
+## 4.4 AUC Score
+
+The **Area Under the ROC Curve (AUC)** provides a single value summarizing the model's classification performance.
+
+- A value close to **1.0** indicates excellent model performance.
+- A value close to **0.5** indicates poor predictive capability.
+
+A higher AUC score indicates that the model can better distinguish between positive and negative cases.
+
+---
+
+## 4.5 Confusion Matrix
+
+A confusion matrix will also be used to analyze the model’s predictions in detail.
+
+The confusion matrix shows:
 
 - True Positives
 - True Negatives
 - False Positives
 - False Negatives
 
-This helps understand where the model makes mistakes.
+This allows us to better understand where the model makes errors and how it can be improved.
 
 ---
 
-# 5. Model Reliability and Final Testing
+# 5. Final Testing and Model Validation
 
-Before deployment, the trained model will undergo final testing to ensure that it performs consistently.
+Before deploying the model, final testing will be performed to ensure reliability and stability.
 
-The following steps will be performed:
+The following steps will be conducted:
 
 - Running predictions on the test dataset
-- Checking performance metrics
-- Verifying that the deployment script correctly loads the trained model
+- Calculating evaluation metrics
+- Verifying that the trained model can be successfully loaded
+- Testing the deployment script with the trained model
 
-These steps help ensure that the system works correctly when integrated into the demo application.
+These steps ensure that the model performs consistently and can be integrated into the deployment environment.
 
 ---
 
 # 6. Conclusion
 
-Validation and testing ensure that the machine learning model developed in the Ride Data Project is reliable and performs well on unseen data. By using train-test split, cross-validation, and multiple performance metrics, the project aims to deliver a robust and trustworthy predictive system.
+Validation and testing play a critical role in ensuring the reliability of machine learning systems.
+
+By applying data validation, train-test splitting, cross-validation, and multiple evaluation metrics, the Ride Data Project ensures that the developed model is robust and performs well on unseen data.
+
+Special emphasis is placed on **recall**, as minimizing false negatives is an important goal for this project. This approach helps ensure that the model produces reliable and meaningful predictions.
