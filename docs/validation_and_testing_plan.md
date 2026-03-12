@@ -1,4 +1,4 @@
-# Validation and Testing Plan – Ride Cancellation Project
+# Validation and Testing Plan – Ride Cancellation Prediction Project
 
 ## 1. Introduction
 
@@ -162,6 +162,6 @@ These steps ensure that the model performs consistently and can be integrated in
 
 Validation and testing play a critical role in ensuring the reliability of machine learning systems.
 
-By applying data validation, train-test splitting, cross-validation, and multiple evaluation metrics, the Ride Data Project ensures that the developed model is robust and performs well on unseen data.
+By applying data validation, train-test splitting, cross-validation, and multiple evaluation metrics, the Ride cancellation Prediction Project ensures that the developed model is robust and performs well on unseen data.
 
 Special emphasis is placed on **recall**, as minimizing false negatives is an important goal for this project. This approach helps ensure that the model produces reliable and meaningful predictions.
