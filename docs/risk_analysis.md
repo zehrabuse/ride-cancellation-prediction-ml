@@ -1,4 +1,4 @@
-# Risk Analysis – Ride Data Project (RDP)
+# Risk Analysis – Ride Cancellation Project
 
 ## 1. Introduction
 
