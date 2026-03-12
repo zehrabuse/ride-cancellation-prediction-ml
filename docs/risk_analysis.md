@@ -1,4 +1,4 @@
-# Risk Analysis – Ride Cancellation Project
+# Risk Analysis – Ride Cancellation Prediction Project
 
 ## 1. Introduction
 
