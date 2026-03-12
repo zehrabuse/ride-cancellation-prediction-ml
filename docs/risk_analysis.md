@@ -105,4 +105,4 @@ From this matrix, **Data Quality Issues** are considered the most critical risk 
 
 # 6. Conclusion
 
-Risk analysis helps improve project reliability and prepares the team for potential challenges. By identifying risks early and defining mitigation strategies, the Ride Data Project can reduce uncertainties and ensure a more successful implementation of the data analysis and machine learning pipeline.
+Risk analysis helps improve project reliability and prepares the team for potential challenges. By identifying risks early and defining mitigation strategies, the Ride Cancellation Project can reduce uncertainties and ensure a more successful implementation of the data analysis and machine learning pipeline.
