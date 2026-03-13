@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-Risk analysis is an important part of software and data science projects. It helps identify potential problems that may occur during the project lifecycle and prepares strategies to reduce their impact. This document presents the risk identification, risk assessment, mitigation strategies, and a risk matrix for the Ride Data Project (RDP).
+Risk analysis is an important part of software and data science projects. It helps identify potential problems that may occur during the project lifecycle and prepares strategies to reduce their impact. This document presents the risk identification, risk assessment, mitigation strategies, and a risk matrix for the Ride Cancellation Prediction Project.
 
 ---
 
