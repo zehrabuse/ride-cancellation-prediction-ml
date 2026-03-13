@@ -13,7 +13,7 @@ From a business perspective, failing to detect an actual cancellation represents
 In contrast, incorrectly predicting a non-canceling ride as high risk may introduce additional precautionary actions and minor operational costs, but it does not pose the same level of business impact. 
 Therefore, prioritizing recall ensures that high-risk cancellation cases are captured effectively, enabling proactive decision-making, better operational control, and the preservation of overall business value.
 
-### Success Criteria
+## Success Criteria
 
 To establish clear benchmarks for evaluating the model's performance, the following thresholds are defined:
 
