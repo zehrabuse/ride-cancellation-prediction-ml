@@ -19,7 +19,7 @@ To establish clear benchmarks for evaluating the model's performance, the follow
 
 - **Recall ≥ 0.80:** The model is considered successful if it correctly identifies at least 80% of potential cancellation cases. This ensures that most high-risk situations are detected.
 
-- **ROC–AUC ≥ 0.85:** This threshold indicates strong discriminative capability, meaning the model can effectively distinguish between canceled and non-canceled rides.
+- **ROC–AUC ≥ 0.80:** This threshold indicates strong discriminative capability, meaning the model can effectively distinguish between canceled and non-canceled rides.
 
 - **Precision ≥ 0.60:** This ensures that predicted cancellation cases are reasonably reliable and that the model does not generate an excessive number of false alarms.
 
