@@ -13,3 +13,14 @@ From a business perspective, failing to detect an actual cancellation represents
 In contrast, incorrectly predicting a non-canceling ride as high risk may introduce additional precautionary actions and minor operational costs, but it does not pose the same level of business impact. 
 Therefore, prioritizing recall ensures that high-risk cancellation cases are captured effectively, enabling proactive decision-making, better operational control, and the preservation of overall business value.
 
+### Success Criteria
+
+To establish clear benchmarks for evaluating the model's performance, the following thresholds are defined:
+
+- **Recall ≥ 0.80:** The model is considered successful if it correctly identifies at least 80% of potential cancellation cases. This ensures that most high-risk situations are detected.
+
+- **ROC–AUC ≥ 0.85:** This threshold indicates strong discriminative capability, meaning the model can effectively distinguish between canceled and non-canceled rides.
+
+- **Precision ≥ 0.60:** This ensures that predicted cancellation cases are reasonably reliable and that the model does not generate an excessive number of false alarms.
+
+If these thresholds are met, the model can be considered effective for supporting operational decision-making and reducing the negative business impact associated with ride cancellations.
