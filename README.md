@@ -6,6 +6,15 @@ machine learning techniques. The project follows an end-to-end machine learning
 pipeline, starting from business problem definition to model deployment and
 result visualization.
 
+## ⚠️ Current Status (Work in Progress)
+
+A data leakage issue has been identified during model evaluation.
+The feature engineering pipeline is currently being revisited and improved to ensure data integrity and more reliable model performance.
+
+Additionally, deployment experiments have been conducted using both:
+- A trained Logistic Regression model (currently unstable and under improvement)
+- A simulation-based demo model used only for UI and visualization testing
+
 ## Business Problem
 Ride cancellations negatively affect customer satisfaction and operational
 efficiency. By predicting cancellation probability in advance, companies can
@@ -113,8 +122,21 @@ machine learning pipeline.
 
 
 ## Deployment Status
-The demo application will be added in the deployment stage. This repository
-currently focuses on data analysis, model development, and evaluation.
+This project contains two deployment-related components:
+
+### 1. Logistic Regression Deployment (Incomplete)
+A real Logistic Regression model with a trained scaler was prepared for deployment.  
+However, due to model-related issues, it is currently not stable for production use.
+
+### 2. Demo Simulation Model (UI Testing)
+A simple simulation model was used in the deployment interface that generates random probability values.
+
+This component was implemented only to:
+- Test the user interface
+- Visualize probabilistic output behavior
+- Simulate how model predictions would appear in a live system
+
+⚠️ Note: This simulation is not a real predictive model.
 
 ## Project Documentation
 Project planning details such as team members, project overview, timeline, and
