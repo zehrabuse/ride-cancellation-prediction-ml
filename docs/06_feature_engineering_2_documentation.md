@@ -9,7 +9,7 @@ Although the initial model built on Feature Engineering_1 achieved high accuracy
 
 ## Notebook
 You can view and run the notebook here: [RDP_Feature_Engineering_2.ipynb](../notebooks/RDP_Feature_Engineering_2.ipynb)
----
+
 
 ## Steps Taken
 
