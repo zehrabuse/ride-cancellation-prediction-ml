@@ -8,12 +8,18 @@ result visualization.
 
 ## ⚠️ Current Status (Work in Progress)
 
-A data leakage issue has been identified during model evaluation.
-The feature engineering pipeline is currently being revisited and improved to ensure data integrity and more reliable model performance.
+During the evaluation phase, a data leakage issue was identified in the dataset. Following this discovery, the project focus shifted back to data preparation and feature engineering to ensure data integrity.
 
-Additionally, deployment experiments have been conducted using both:
-- A trained Logistic Regression model (currently unstable and under improvement)
-- A simulation-based demo model used only for UI and visualization testing
+At this stage:
+
+- The dataset was thoroughly analyzed to identify leakage-prone and noisy features  
+- A full feature engineering process was applied to remove leakage sources and construct more reliable and safe features  
+- A cleaned and leakage-free dataset has been successfully created  
+- The dataset is now ready for robust model training and evaluation  
+
+The project has moved back into the model development phase. New models are currently being trained and evaluated using the improved dataset.
+
+Earlier experiments included a Logistic Regression model and a simple simulation-based demo for UI testing purposes; however, these are considered part of the initial prototype phase and are no longer representative of the current pipeline.
 
 ## Business Problem
 Ride cancellations negatively affect customer satisfaction and operational
