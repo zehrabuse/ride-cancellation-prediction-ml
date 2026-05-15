@@ -184,7 +184,7 @@ def main():
         pass
     input_df = build_input_dataframe(mapped, features)
 
-    # SIMULATION MODE: generate realistic, dynamic probabilities (do not rely on model output)
+    # SIMULATION MODE: generate realistic, dynamic probabilities 
     # Seed RNG with time + input-derived offset so values change on input interaction
     seed_offset = int(demand_level * 7 + distance_km * 13 + driver_rating * 97 + customer_rating * 131 + traffic_val * 17 + peak_val * 19)
     seed = int(time.time() * 1000) + seed_offset
