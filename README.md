@@ -39,7 +39,7 @@ This document covers the feature engineering process applied to the dataset. It 
 
 Additionally, this stage was revisited after identifying a data leakage issue in the dataset. A second feature engineering iteration was performed to eliminate leakage risks and ensure data integrity, resulting in a more robust and reliable feature set.
 
-[06_feature_engineering_2_documentation.md](docs/06_eature_engineering_2_documentation.md)
+[06_feature_engineering_2_documentation.md](docs/06_feature_engineering_2_documentation.md)
 
 ---
 
