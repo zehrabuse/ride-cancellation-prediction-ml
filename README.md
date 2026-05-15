@@ -39,7 +39,8 @@ This document covers the feature engineering process applied to the dataset. It 
 
 Additionally, this stage was revisited after identifying a data leakage issue in the dataset. A second feature engineering iteration was performed to eliminate leakage risks and ensure data integrity, resulting in a more robust and reliable feature set.
 
-[06_feature_engineering_2.md](docs/06_feature_engineering_2.md)
+[06_feature_engineering_2_documentation.md](docs/06_eature_engineering_2_documentation.md)
+
 ---
 
 ### 📄 Exploratory Data Analysis
@@ -47,6 +48,20 @@ This repository includes a comprehensive exploratory analysis of the ride cancel
 
 You can view and run the notebook here:  
 [03_exploratory_data_analysis.md](docs/03_exploratory_data_analysis.md)
+
+---
+
+### 📄 Model Creation I
+This document covers the initial machine learning model development phase based on the first feature engineering process. Baseline models were trained and evaluated using the initially prepared dataset in order to establish preliminary prediction performance and understand feature behavior.
+
+[05_model_creation_1.md](docs/05_model_creation_1.md)
+
+---
+
+### 📄 Model Creation II
+After identifying a data leakage issue during the first modeling phase, the feature engineering process was revisited and improved. This second model creation stage was conducted using the corrected and leakage-free dataset, resulting in more reliable and realistic model performance.
+
+[07_model_creation_2.md](docs/07_model_creation_2.md)
 
 ---
 
