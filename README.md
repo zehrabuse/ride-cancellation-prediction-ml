@@ -1,75 +1,39 @@
 # Ride Cancellation Prediction – Machine Learning Project
 
 ## Project Overview
-This project aims to predict the probability of ride cancellations using
-machine learning techniques. The project follows an end-to-end machine learning
-pipeline, starting from business problem definition to model deployment and
-result visualization.
+This project aims to predict the probability of ride cancellations using machine learning techniques. It follows an end-to-end ML pipeline covering business understanding, data preparation, feature engineering, model development, and deployment.
 
-## ⚠️ Current Status (Work in Progress)
+The goal is to support operational decision-making by identifying potential ride cancellations in advance and improving service efficiency.
 
-During the evaluation phase, a data leakage issue was identified in the dataset. Following this discovery, the project focus shifted back to data preparation and feature engineering to ensure data integrity.
-
-At this stage:
-
-- The dataset was thoroughly analyzed to identify leakage-prone and noisy features  
-- A full feature engineering process was applied to remove leakage sources and construct more reliable and safe features  
-- A cleaned and leakage-free dataset has been successfully created  
-- The dataset is now ready for robust model training and evaluation  
-
-The project has moved back into the model development phase. New models are currently being trained and evaluated using the improved dataset.
-
-Earlier experiments included a Logistic Regression model and a simple simulation-based demo for UI testing purposes; however, these are considered part of the initial prototype phase and are no longer representative of the current pipeline.
+---
 
 ## Business Problem
-Ride cancellations negatively affect customer satisfaction and operational
-efficiency. By predicting cancellation probability in advance, companies can
-take proactive actions to reduce cancellations and improve service quality.
+Ride cancellations negatively impact customer satisfaction and operational efficiency. Predicting cancellations in advance enables proactive interventions such as better driver allocation, improved scheduling, and reduced operational loss.
+
+---
 
 ## Business Objectives
+Detailed documentation:
 
-Detailed documentation of the business objectives, decision support perspective, and expected business impact of this project is available below:
-
-- 📄 [Business Objectives Documentation](docs/business_objectives.md)
+- 📄 [Business Objectives](docs/business_objectives.md)  
 - 📊 [Business Value & Success Metrics](docs/business_value_and_metrics.md)
 
-## Data Preparation & Feature Engineering Documentation
+---
 
-### 📄 Data Cleaning Documentation
-This document focuses on handling missing values in the dataset.  
-It explains how missing values were identified and how they were handled to improve data quality and prepare the data for modeling.
+## Data Preparation & Feature Engineering
 
-[01_cleaning_documentation.md](docs/01_cleaning_documentation.md)
+- 📄 [Data Cleaning](docs/01_cleaning_documentation.md)  
+- 📄 [Feature Engineering](docs/02_feature_engineering_documentation.md)  
+- 📄 [Exploratory Data Analysis](docs/03_exploratory_data_analysis.md)  
+- 📄 [Business Insights](docs/04_business_insights.md)
 
-### 📄 Feature Engineering Documentation
-This document covers the feature engineering process applied to the dataset.  
-It includes data type corrections, encoding of categorical variables, and basic feature transformations performed to make the dataset suitable for machine learning algorithms.
-
-[02_feature_engineering_documentation.md](docs/02_feature_engineering_documentation.md)
-
-### 📄 Exploratory Data Analysis
-
-This repository includes a comprehensive exploratory analysis of the ride cancellation dataset. The EDA notebook identifies patterns, trends, and key features influencing cancellations, which helps guide feature engineering and predictive modeling.
-
-You can view and run the notebook here: [03_exploratory_data_analysis.md](docs/03_exploratory_data_analysis.md)
-
-### 📄 Business Insights Documentation
-This notebook provides actionable business insights derived from the ride cancellation data. It highlights key patterns, temporal trends, vehicle types, and payment methods affecting cancellations, along with recommendations for improving platform reliability, customer satisfaction, and driver efficiency.
-
-You can view and run the notebook here: [04_business_insights.md](docs/04_business_insights.md)
-
-### Key Analyses in the Notebook
-- **Temporal Analysis:** Hourly, 15-minute intervals, day of month, day of week, and weekday vs weekend.
-- **Categorical Feature Analysis:** Vehicle Type and Payment Method one-hot encoded features analyzed for cancellation trends.
-- **Observations:** Peak cancellation times, high-risk vehicle types, and payment methods highlighted.
-
+---
 
 ## Machine Learning Pipeline
-The machine learning workflow is designed as a linear pipeline aligned with the
-weekly project plan. The pipeline includes the following stages:
+The project follows a structured end-to-end ML pipeline:
 
-1. Problem Definition & Business Understanding  
-2. Data Loading  
+1. Business Understanding  
+2. Data Collection  
 3. Data Cleaning & Preprocessing  
 4. Exploratory Data Analysis (EDA)  
 5. Feature Engineering  
@@ -77,78 +41,10 @@ weekly project plan. The pipeline includes the following stages:
 7. Model Evaluation  
 8. Prediction  
 9. Insight Generation  
-10. Deployment and Demo Interface  
+10. Deployment  
 
-The complete workflow is illustrated using an activity diagram.
-
-## Activity Diagram
-The activity diagram illustrates the complete end-to-end machine learning
-pipeline, starting from business problem definition to model deployment and
-result visualization. The workflow is aligned with the weekly project plan and
-does not include decision nodes, as the process follows a linear pipeline
-structure.
-
-The activity diagram is provided both as a visual image and as an editable
-draw.io source file in the `diagrams/` folder. A detailed textual explanation
-of the activity diagram is available in the file
-`ml_pipeline_activity_description.txt`.
+---
 
 ## Project Structure
-The repository is organized as follows:
-
-- `data/` – Raw dataset
-- `notebooks/` – Jupyter notebooks for each stage of the ML pipeline  
-- `models/` – Trained machine learning models  
-- `deployment/` – Demo application for model deployment  
-- `diagrams/` – UML activity diagram (PNG and draw.io source)  
-- `docs/` – Project management documentation (team members, timeline, budget)  
-- `ml_pipeline_activity_description.txt` – Textual explanation of the ML pipeline
-
-## Dataset
-
-- The raw dataset is stored in the `data/raw/` directory.
-- The processed dataset is generated during the data cleaning and feature engineering steps.
-- Due to file size limitations, processed data files are not stored in the repository and can be generated by running the notebooks. 
-
-## Technologies Used
-- Python  
-- Pandas, NumPy  
-- Scikit-learn  
-- Matplotlib, Seaborn  
-- Streamlit or Flask  
-
-## How to Run
-1. Install the required libraries:
-```bash
-pip install -r requirements.txt
-```
-
-2. Run the notebooks in order from the notebooks/ folder to reproduce the
-machine learning pipeline.
-
-
-## Deployment Status
-This project contains two deployment-related components:
-
-### 1. Logistic Regression Deployment (Incomplete)
-A real Logistic Regression model with a trained scaler was prepared for deployment.  
-However, due to model-related issues, it is currently not stable for production use.
-
-### 2. Demo Simulation Model (UI Testing)
-A simple simulation model was used in the deployment interface that generates random probability values.
-
-This component was implemented only to:
-- Test the user interface
-- Visualize probabilistic output behavior
-- Simulate how model predictions would appear in a live system
-
-⚠️ Note: This simulation is not a real predictive model.
-
-## Project Documentation
-Project planning details such as team members, project overview, timeline, and
-budget are documented in the Excel file located in the `docs/` folder.
-
-## Author
-Zehra Buse Tüfekçi
 
 
