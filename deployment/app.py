@@ -23,11 +23,10 @@ def load_model_and_features():
             model = None
     try:
         features = joblib.load("features.pkl")
-        # if features is a numpy wrapper, try to convert
+       
         if isinstance(features, (list, tuple)):
             features = list(features)
         else:
-            # try to coerce common containers
             try:
                 features = list(features)
             except Exception:
@@ -99,7 +98,6 @@ def map_inputs_to_features(user_inputs, features):
             if placed:
                 break
         if not placed:
-            # just leave unmapped (will be ignored)
             pass
     return out
 
@@ -125,7 +123,6 @@ def recommend_actions(customer_p, driver_p, inputs):
     if inputs.get("driver_rating", 5) < 3.5:
         recs.append(("Driver ratings low — monitor driver behavior and quality.", "medium"))
 
-    # dedupe while preserving order
     seen = set()
     out = []
     for r, lvl in recs:
@@ -149,10 +146,10 @@ def main():
     demand_level = st.sidebar.slider("Demand Level", 0, 100, 40, help="Estimated demand as percentage of baseline")
     distance_km = st.sidebar.slider("Average Trip Distance (km)", 0.5, 40.0, 6.0, step=0.5)
     driver_rating = st.sidebar.slider("Avg Driver Rating", 1.0, 5.0, 4.6, step=0.1)
-    # Customer rating (was previously not updating properly) — interactive and bound
+    # Customer rating 
     customer_rating = st.sidebar.slider("Customer Rating", 1.0, 5.0, 4.8, step=0.1, key="customer_rating")
     traffic_level = st.sidebar.selectbox("Traffic Level", options=["Low", "Moderate", "High", "Severe"], index=1)
-    # Peak Hour selection improved from checkbox to dropdown with explanation below
+    # Peak Hour selection 
     peak_hour_sel = st.sidebar.selectbox("Peak Hour", options=["Off-Peak", "Morning Peak", "Evening Peak"], index=0)
     st.sidebar.markdown("**Peak Hour time ranges:**  \n- Morning Peak: 07:00 - 10:00  \n- Evening Peak: 17:00 - 21:00  \n- Off-Peak: 10:00 - 17:00 / 21:00 - 07:00")
 
@@ -184,8 +181,7 @@ def main():
         pass
     input_df = build_input_dataframe(mapped, features)
 
-    # SIMULATION MODE: generate realistic, dynamic probabilities 
-    # Seed RNG with time + input-derived offset so values change on input interaction
+    # SIMULATION 
     seed_offset = int(demand_level * 7 + distance_km * 13 + driver_rating * 97 + customer_rating * 131 + traffic_val * 17 + peak_val * 19)
     seed = int(time.time() * 1000) + seed_offset
     rng = np.random.default_rng(seed)
@@ -244,7 +240,6 @@ def main():
         # Risk distribution chart: show Low / Medium / High and highlight active bucket
         bucket = risk_from_prob(max_p)[0]
         risk_levels = ["Low", "Medium", "High"]
-        # normalize activation within bucket for a small visual indicator
         vals = []
         for lvl in risk_levels:
             if lvl == "Low":
@@ -270,7 +265,7 @@ def main():
         ).properties(height=140)
         st.altair_chart(risk_chart, use_container_width=True)
 
-        # Breakdown and small details
+        
         with st.expander("Input summary"):
             st.write(user_inputs)
 
